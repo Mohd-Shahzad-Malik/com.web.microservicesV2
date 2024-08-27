@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/v2")
 public class CurrencyExchangeController {
 
     @Autowired
@@ -25,7 +25,6 @@ public class CurrencyExchangeController {
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
     public ExchangeValue retriveExchangeValue(@PathVariable String from , @PathVariable String to){
         ExchangeValue byFromAndTo = currencyExchangeRepo.findByFromAndTo(from, to);
-//        ExchangeValue exchangeValue = new ExchangeValue(byFromAndTo., from, to, BigDecimal.valueOf(65));
         byFromAndTo.setPort(Integer.parseInt(Objects.requireNonNull(env.getProperty("local.server.port"))));
         return byFromAndTo;
     }

@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import java.math.BigDecimal;
 
 @RestController
-@RequestMapping("v1")
+@RequestMapping("v2")
 @RibbonClient(name = "currency-exchange-service")
 public class CurrencyConversionController {
     

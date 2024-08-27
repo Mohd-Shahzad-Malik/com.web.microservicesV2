@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/currency-conversion-service/pom.xml" />
         <option value="$PROJECT_DIR$/netflix-eureka-naming-server/pom.xml" />
         <option value="$PROJECT_DIR$/netflix-zuul-api-gateway-server/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
       </list>
     </option>
   </component>
